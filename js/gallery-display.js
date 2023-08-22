@@ -7,7 +7,7 @@ export function displayGallery () {
       data.forEach(image => {
         const figure = document.createElement('figure')
         const img = document.createElement('img')
-        img.src = `https://p3-prod-api.matouba-portfolio.fr/images/${image.imageUrl}`
+        img.src = `https://p3-prod-api.matouba-portfolio.fr/${image.imageUrl}`
         img.crossOrigin = 'anonymous'
 
         const p = document.createElement('p')
