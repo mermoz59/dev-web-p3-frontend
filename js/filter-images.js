@@ -12,7 +12,7 @@ export function filterImages (categoryIds) {
         if (categoryIds.includes(image.categoryId)) {
           const figure = document.createElement('figure')
           const img = document.createElement('img')
-          img.src = image.imageUrl
+          img.src = `https://p3-prod-api.matouba-portfolio.fr${image.imageUrl}`
           img.crossOrigin = 'anonymous'
 
           const p = document.createElement('p')
