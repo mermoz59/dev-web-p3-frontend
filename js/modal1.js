@@ -4,7 +4,7 @@ export function modalDisplay () {
     elements[i].addEventListener('click', function () {
       document.querySelector('#modal1').style.display = 'flex'
 
-      fetch('https://p7-prod-api.matouba-portfolio.fr/api/works')
+      fetch('https://p3-prod-api.matouba-portfolio.fr/api/works')
         .then(response => response.json())
         .then(data => {
           const container = document.getElementById('modal-gallery')
