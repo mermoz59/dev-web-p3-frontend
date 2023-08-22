@@ -10,7 +10,7 @@ formLogin.addEventListener('submit', (event) => {
   const password = passwordDOM.value
   const data = { email, password }
 
-  fetch('http://localhost:5678/api/users/login', {
+  fetch('https://p7-prod-api.matouba-portfolio.fr/api/users/login', {
     method: 'POST',
     body: JSON.stringify(data),
     headers: {

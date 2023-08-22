@@ -8,7 +8,7 @@ export function deleteItem () {
       const token = localStorage.getItem('token')
       const container = document.getElementById('image-container')
 
-      fetch(`http://localhost:5678/api/works/${id}`, {
+      fetch(`https://p7-prod-api.matouba-portfolio.fr/api/works/${id}`, {
         method: 'DELETE',
         headers: {
           Authorization: `Bearer ${token}`
