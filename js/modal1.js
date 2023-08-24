@@ -18,7 +18,7 @@ export function modalDisplay () {
             const iconDelete = document.createElement('button')
             const iconMove = document.createElement('button')
 
-            img.src = `https://p3-prod-api.matouba-portfolio.fr${image.imageUrl}`
+            img.src = image.imageUrl
             img.crossOrigin = 'anonymous'
             iconDelete.className = 'fa-sharp fa-solid fa-trash-can'
             iconDelete.id = 'delete-button'
